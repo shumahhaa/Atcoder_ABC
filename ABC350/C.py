@@ -2,7 +2,7 @@ N = int(input())
 inputs = input()
 A = [int(i) for i in inputs.split()]
 pos = [0 for i in range(N)]
-
+#index関数を使うとO(N**2)でTLEになるので、Aの場所をposに保存する
 for i in range(N):
   pos[A[i]-1] = i
 
